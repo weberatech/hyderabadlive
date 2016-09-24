@@ -74,7 +74,7 @@ img{
     font-weight: bold;
     margin: 0;
     padding: 0;
-    color: #00d999;
+    color: #ba1836;
 }
 .carousel-caption span{
     font-size: 40px;
@@ -113,7 +113,7 @@ img{
 }
 .logo {
     height: 100px;  
-    width: 85px;
+    width: 110px;
     margin-right: 45px;
     margin-top: -1px;
     padding: 0;
@@ -121,7 +121,7 @@ img{
 }
 .logo-compressed {
     height: 80px;  
-    width: 70px;
+    width: 80px;
 }
 .logo img {
     height: 100%;
@@ -462,7 +462,7 @@ img{
     text-decoration: none;
 }
 .blog-grid a:hover{
-    color: #00d999;
+    color: #ba1836;
 }
 .team-item{
     width: 230px;
@@ -670,19 +670,8 @@ img{
 .single-service:hover{
     background-color: #fff;
 }
-.single-service .service-icon{
-    color: #bdbdbd;
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-.single-service .service-title {
-    color: #343333;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-.single-service ul{
-    color: #878787;
+.single-service span{
+    float: right;
 }
 
 /*--------------------*/
@@ -2052,8 +2041,8 @@ img{
     }
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus{
-        background-color: #00d999;
-        border-color: #00d999;
+        background-color: #ba1836;
+        border-color: #ba1836;
         color: #fff;
     }
     .navbar-default .navbar-toggle:hover .icon-bar,
@@ -2546,26 +2535,3 @@ img{
         text-align: center;	  
     }
 }
-
-/*.anim-cycle {
-    animation: walk-cycle 1s steps(8) infinite,mymove 10s infinite;
-    background: url(assets/images/bicycle1.png) 0 0 no-repeat; 
-    height: 148px;
-    width: 397px;
-    position: relative;
-}
-@keyframes walk-cycle {  
-    0% {background-position: 0 0; } 
-    100% {background-position: 0 -1186px; } 
-}
-
- Chrome, Safari, Opera 
-@-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 70%;}
-}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 70%;}
-}*/
