@@ -60,7 +60,16 @@ img{
     text-decoration: none;
     outline: none;
 }
-
+#identity-stamp{
+    z-index: 100;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+}
+#identity-stamp img{
+    height: 130px;
+    
+}
 /*--------------------*/
 /* HOME HEADER */
 /*--------------------*/
@@ -86,15 +95,15 @@ img{
 /*--------------------*/
 /* MENU */
 /*--------------------*/
-
 #menu-area{
     float: left;
     display: inline;
     width: 100%;
 }
 .main-navbar {
-    background: #fff none repeat scroll 0 0;
+    background-image: url('assets/images/bg_1.gif');
     border-radius: 0;
+    border: 0;
     border-bottom: 1px solid #e7e7e7;  
     border-right: medium none;
     height: 100px;
@@ -112,27 +121,24 @@ img{
     transition: all 0.5s;
 }
 .logo {
-    height: 100px;  
-    width: 110px;
-    margin-right: 45px;
-    margin-top: -1px;
+    margin-top: 34px;
+    margin-left: 5px;
+    height: 25px;  
+    width: 230px;
     padding: 0;
     display: inline-flex;
 }
 .logo-compressed {
-    height: 80px;  
-    width: 80px;
+    height: 25px;  
+    width: 230px;
 }
 .logo img {
     height: 100%;
     width: 100%;
 }
-.logo span{
-    margin-top: 20px;
-}
 #navbar {
     float: left;
-    width: 83%;
+    width: 80%;
 }
 .main-nav {
     display: inline-block;
@@ -144,7 +150,7 @@ img{
     float: none;
 }
 .main-nav li a {
-    color: #636363;
+    color: #fff;
     font-size: 15px;
     padding: 39px 20px;
     text-transform: uppercase;
@@ -154,7 +160,7 @@ img{
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #636363;
+    color: #fff;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -220,7 +226,7 @@ img{
 }
 .wc-table li {  
     float: left;
-    width: 25%;
+    width: 14%;
 }
 .single-wc-content{
     float: left;
@@ -435,7 +441,6 @@ img{
     width: 100%;
 }
 .team-grid,.blog-grid {
-    margin: 20px 0 0 0;
     padding: 0;
     list-style: none;
     display: block;
@@ -487,26 +492,6 @@ img{
     border-radius: 50%;
     background-color: #fff;
 }
-.team-img-1 { 
-    background-image: url(assets/images/ayushmax.png);
-    background-size: 70% 70%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.team-img-2 { 
-    background-image: url(assets/images/wellness.jpg);
-    background-size: 70% 70%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.team-img-3 { 
-    background-image: url(assets/images/biz2biz.png);
-    background-size: 70% 70%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
 .blog-img-1{
     background-image: url(assets/images/cocoon.png);
     background-repeat: no-repeat;
@@ -515,7 +500,7 @@ img{
 }
 .blog-img-2{
     background-image: url(assets/images/Weberatech_logo.png);
-    background-size: 80% 80%;
+    background-size: 90% 60%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -631,49 +616,17 @@ img{
     float: left;
     width: 100%;
 }
-.service-table{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+.nav-tabs>li{
+    width: 50%;
+    font-weight: bold;
+    font-size: 20px;
 }
-.single-service {
-    display: inline;
-    float: left;
-    margin-bottom: 15px;
-    padding: 45px 20px;
-    position: relative;
-    text-align: left;
-    width: 100%;
-    -w-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+.tab-content img{
+    /*max-width: 100%;*/
+    padding-top: 25px;
+    height: 200px;
+    width: 140px;
 }
-.single-service:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    bottom: 0;
-    height: 24px;
-    width: 100%;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.single-service:hover:after{
-    opacity: 1;
-}
-.single-service:hover{
-    background-color: #fff;
-}
-.single-service span{
-    float: right;
-}
-
 /*--------------------*/
 /* PORTFOLIO */
 /*--------------------*/
@@ -855,10 +808,14 @@ img{
     top: 0;
     width: 100%;
 }
+.counter-overlay .title-area .tittle{
+    color: #fff;
+    padding: 30px;
+}
 .counter-area {
     display: inline;
     float: left;
-    padding: 112px 0;
+    padding: 50px 0;
     width: 100%;
 }
 .single-counter {
@@ -896,78 +853,6 @@ img{
     height: 80px;
     width: 80px;
 }
-
-/*--------------------*/
-/* PRICING TABLE */
-/*--------------------*/
-
-#pricing-table{
-    display: inline;
-    float: left;
-    padding: 70px 0;
-    width: 100%;
-}
-.pricing-table-area{
-    display: inline;
-    float: left;
-    width: 100%;
-}
-.pricing-table-content {
-    display: inline;
-    float: left;
-    margin-top: 60px;
-    width: 100%;
-}
-.price-table{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-.price-table li {
-    border-bottom: 1px solid #e4e4e4;
-    border-left: 1px solid #e4e4e4;
-    border-top: 1px solid #e4e4e4;
-    display: inline-block;
-    float: left;
-    padding-bottom: 12px;
-    width: 25%;
-}
-.price-table li:last-child{
-    border-right: 1px solid #e4e4e4;
-}
-
-.standard-price .price-header::after{
-    bottom: -22%;
-}
-
-.standard-price{
-    margin-top: -20px;
-}
-.standard-price .price-header{
-    padding: 30px 0px;
-}
-.single-price a {
-    -moz-border-bottom-colors: none !important;
-    -moz-border-left-colors: none !important;
-    -moz-border-right-colors: none !important;
-    -moz-border-top-colors: none !important;
-    border-image: none !important;
-    border-left: medium none !important;
-    border-right: medium none !important;
-    border-top: medium none !important;
-    display: inline-block;
-    float: none;
-    margin-top: 23px;
-}
-.single-price a span {
-    border: medium none;
-    display: inline-block;
-    padding: 12px 65px;
-}
-.standard-price a{
-    color: #fff !important;
-}
-
 /*--------------------*/
 /* TESTIMONIAL */
 /*--------------------*/
